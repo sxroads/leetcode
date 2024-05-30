@@ -1,0 +1,44 @@
+1 example solution for better understanding : 
+
+Example "XIV" 
+
+total = 0
+prev_value = 0
+First Character 'X':
+
+current_value = 10
+prev_value < current_value (0 < 10) => false, so no subtraction
+Add current_value to total: total = total + current_value = 0 + 10 = 10
+Update prev_value to current_value: prev_value = 10
+
+total = 10
+prev_value = 10
+Second Character 'I':
+
+
+current_value = 1
+Since prev_value < current_value (10 < 1) false, so no subtraction
+Add current_value to total: total = total + current_value = 10 + 1 = 11
+Update prev_value to current_value: prev_value = 1
+
+total = 11
+prev_value = 1
+Third Character 'V':
+
+current_value = 5
+Since prev_value < current_value (1 < 5) is true, we subtract twice the prev_value to adjust:
+total = total - 2 * prev_value = 
+total = 11 - 2 * 1 =  
+total = 11 - 2 = 9
+Add current_value to total: total = total + current_value = 9 + 5 = 14
+Update prev_value to current_value: prev_value = 5
+Final Result:
+total = 14
+prev_value = 5
+
+After going through all the characters, the total is 14.
+
+The complexity is linear O(n), because we are passing the list only one time.
+
+
+
